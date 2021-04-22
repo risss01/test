@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dashboard</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="https://freepngimg.com/download/burger%20sandwich/72-hamburger-burger-png-image-mac-burger.png"
+    rel="shortcut icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- header -->
+  <header id="header" class="fixed-top header-transparent d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <div class="logo">
+        <h1>
+          <a href="index.html" style="color: #ffb03b;"><b>IDN</b>Resto</a>
+        </h1>
+      </div>
+      <!-- navigation -->
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#specials" class="nav-link">Spesial</a></li>
+          <li><a href="#recomended" class="nav-link">Rekomendasi</a></li>
+          <li class="dropdown"><a href="#">Drop down <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Menu 1</a></li>
+              <li><a href="#">Menu 2</a></li>
+              <li><a href="#">Menu 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact" class="nav-link">Kontak</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- end navigation -->
+
+      <div>
+        <a href="" class="login-btn ms-6">Login</a>
+        <a href="" class="book-a-table-btn ms-1">Registerasi</a>
+      </div>
+
+    </div>
+  </header>
+  <!-- end header -->
+
+  <!-- hero -->
+
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" data-bs-interval="3000" data-bs-ride="carousel" class="carousel slide carousel-fade">
+        <div class="carousel inner" role="listbox">
+
+          <!-- slide 1 -->
+          <div class="carousel-item active" style="background: url(assets/img/slide/slide-1.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>IDN</span>Restoran</h2>
+                <p class="animate__animated animate__fadeInDown">Lorem, ipsum dolor sit amet consectetur adipisicing
+                  elit. Quo delectus repudiandae omnis doloremque
+                  soluta pariatur quisquam illo id numquam nihil!</p>
+                <div>
+                  <a href="#" class="btn-menu animate__animated animate__fadeInUp scrollto">Menu Kami</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end slide 1 -->
+
+          <!-- slide 2 -->
+          <div class="carousel-item" style="background: url(assets/img/slide/slide-2.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>IDN</span>Restoran</h2>
+                <p class="animate__animated animate__fadeInDown">Lorem, ipsum dolor sit amet consectetur adipisicing
+                  elit. Quo delectus repudiandae omnis doloremque
+                  soluta pariatur quisquam illo id numquam nihil!</p>
+                <div>
+                  <a href="#" class="btn-menu animate__animated animate__fadeInUp scrollto">Menu Kami</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end slide 2 -->
+        </div>
+      </div>
+      <a href="#heroCarousel" role="button" data-bs-slide="prev" class="carousel-control-prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+      <a href="#heroCarousel" role="button" data-bs-slide="next" class="carousel-control-next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- endhero -->
+
+  <!-- main -->
+  <section id="menu" class="menu">
+    <div class="container">
+      <div class="section-title">
+        <h2>Semua <span>Menu</span></h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="menu-flters">
+            <li data-filter="*" class="filter-active">Show All</li>
+            <li data-filter=".filter-bakso">Bakso</li>
+          </ul>
+        </div>
+        <div class="menu-container row">
+
+          <div class="col-lg-6 menu-item filter-bakso">
+            <div class="menu-content">
+              <a href="#">Bakso Urat</a><span>Rp.15.000</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem ipsum dolor sit amet.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-bakso">
+            <div class="menu-content">
+              <a href="#">Bakso Granat</a><span>Rp.23.000</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem ipsum dolor sit amet.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-bakso">
+            <div class="menu-content">
+              <a href="#">Bakso Solo</a><span>Rp.12.000</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem ipsum dolor sit amet.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-bakso">
+            <div class="menu-content">
+              <a href="#">Bakso Mercon</a><span>Rp.20.000</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem ipsum dolor sit amet.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end main -->
+
+  <!-- specials -->
+  <section id="specials" class="specials">
+    <div class="container">
+      <div class="section-title">
+        <h2>Menu <span>Special</span></h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-3">
+          <ul class="nav nav-tabs flex-column">
+            <li class="nav-item">
+              <a href="#tab-1" data-bs-toggle="tab" class="nav-link active show"> Nasi Putih </a>
+            </li>
+            <li class="nav-item">
+              <a href="#tab-2" data-bs-toggle="tab" class="nav-link"> Buah </a>
+            </li>
+            <li class="nav-item">
+              <a href="#tab-3" data-bs-toggle="tab" class="nav-link"> Ramen </a>
+            </li>
+            <li class="nav-item">
+              <a href="#tab-4" data-bs-toggle="tab" class="nav-link"> cookies </a>
+            </li>
+            <li class="nav-item">
+              <a href="#tab-5" data-bs-toggle="tab" class="nav-link"> Salad </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-9 mt-4 mt-lg-0">
+          <div class="tab-content">
+            <div class="tab-pane active show" id="tab-1">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Nasi Putih</h3>
+                  <p class="font-italic">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia quia eaque
+                    possimus!</p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="assets/img/specials-1.jpg" class="img-fluid">
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane" id="tab-2">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Buah</h3>
+                  <p class="font-italic">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia quia eaque
+                    possimus!</p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="assets/img/specials-2.jpg" class="img-fluid">
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane" id="tab-3">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Ramen</h3>
+                  <p class="font-italic">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia quia eaque
+                    possimus!</p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="assets/img/specials-3.jpg" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab-4">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Cookies</h3>
+                  <p class="font-italic">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia quia eaque
+                    possimus!</p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="assets/img/specials-4.jpg" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab-5">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Salad</h3>
+                  <p class="font-italic">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia quia eaque
+                    possimus!</p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="assets/img/specials-5.jpg" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- end specials -->
+
+
+  <!-- galery -->
+  <section id="recomended" class="gallery">
+    <div class="container-fluid">
+      <div class="section-title">
+        <h2>Rekomendasi <span>Kami</span></h2>
+      </div>
+      <div class="row no-gutters justify-content-center">
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="detail.html" class="gallery-lightbox">
+              <img src="assets/img/food/food-1.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+          <p class="mt-2 text-center">Steak</p>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="assets/img/food/food-2.jpg" class="gallery-lightbox">
+              <img src="assets/img/food/food-2.jpg" alt class="img-fluid">
+            </a>
+          </div>
+          <p class="mt-2 text-center">Korean Spicy</p>
+
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="assets/img/food/food-3.jpg" class="gallery-lightbox">
+              <img src="assets/img/food/food-3.jpg" alt class="img-fluid">
+            </a>
+          </div>
+          <p class="mt-2 text-center">Japanese</p>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="assets/img/food/food-4.jpg" class="gallery-lightbox">
+              <img src="assets/img/food/food-4.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+          <p class="mt-2 text-center">Pizaa</p>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="assets/img/food/food-5.jpg" class="gallery-lightbox">
+              <img src="assets/img/food/food-5.jpg" alt class="img-fluid">
+            </a>
+          </div>
+          <p class="mt-2 text-center">Salad</p>
+
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="assets/img/food/food-6.jpg" class="gallery-lightbox">
+              <img src="assets/img/food/food-6.jpg" alt class="img-fluid">
+            </a>
+          </div>
+          <p class="mt-2 text-center">Health</p>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="assets/img/food/food-7.jpg" class="gallery-lightbox">
+              <img src="assets/img/food/food-7.jpg" alt class="img-fluid">
+            </a>
+          </div>
+          <p class="mt-2 text-center">Vegetables</p>
+
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="assets/img/food/food-8.jpg" class="gallery-lightbox">
+              <img src="assets/img/food/food-8.jpg" alt class="img-fluid">
+            </a>
+          </div>
+          <p class="mt-2 text-center">Sweet</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end galery -->
+
+  <!-- Kontak -->
+  <section id="contact" class="contact">
+    <div class="section-title">
+      <h2>Kontak <span>Kami</span></h2>
+    </div>
+    <div class="map">
+      <iframe style="border: 0; width: 100%; height: 350px;"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.9715997322814!2d107.0359520143842!3d-6.525270595280138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69bc6e5be3d9bd%3A0x6b9881dabd801476!2sSMP-SMK%20IDN%20Boarding%20School!5e0!3m2!1sen!2sid!4v1618976917493!5m2!1sen!2sid"></iframe>
+    </div>
+
+    <div class="container mt-5">
+      <div class="info-wrap">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 info">
+            <i class="bi bi-geo-alt-fill"></i>
+            <h4>Lokasi: </h4>
+            <p>Jl. Raya Dayeuh, Sukanegara, Kec. Jonggol, Bogor, Jawa Barat 16830</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 info">
+            <i class="bi bi-clock-fill"></i>
+            <h4>Jam Buka: </h4>
+            <p>08.00–17.00</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 info">
+            <i class="bi bi-envelope-fill"></i>
+            <h4>Email: </h4>
+            <p>idnboarding@gmail.com</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 info">
+            <i class="bi bi-telephone-fill"></i>
+            <h4>Telp: </h4>
+            <p>(021)123456</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- end Kontak -->
+
+  <!-- Footer -->
+  <footer id="footer">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L40,53.3C80,43,160,21,240,42.7C320,64,400,128,480,133.3C560,139,640,85,720,96C800,107,880,181,960,202.7C1040,224,1120,192,1200,181.3C1280,171,1360,181,1400,186.7L1440,192L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+    <div class="container">
+      <h3>IDN Resto</h3>
+      <p>Terima Kasih atas kunjungan anda</p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>IDN Resto</span></strong>. All Right Reserved
+      </div>
+    </div>
+  </footer>
+  <!-- end Footer -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
